@@ -175,8 +175,8 @@ header h3 {
     position: fixed;
     right: 10px;
     bottom: 10px;
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
     background-color: #d5d5d5;
     text-align: center;
     border-radius: 50%;
@@ -184,7 +184,7 @@ header h3 {
     display: none;
 }
 .back-top .iconfont{
-    font-size: 34px;
+    font-size: 35px;
 }
 .back-top span{
     display: block;
