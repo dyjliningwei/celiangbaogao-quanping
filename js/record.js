@@ -38,4 +38,73 @@ $(function () {
         };
     }
 
+    // 数据展示
+
+    var chart = new Highcharts.Chart('line1', {
+        title: {
+            text: '一周体重数据',
+            style:{
+                fontSize:'15px'
+            },
+            x: 0
+        },
+        subtitle: {
+            text: '',
+            x: -20
+        },
+        colors: ['#758fbf'],
+        credits: {
+            enabled: false
+        },
+        exporting: {
+            enabled: false
+        },
+        xAxis: {
+            labels: {
+                enabled: false
+            },
+            tickWidth: 0
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }],
+            gridLineWidth: 0
+        },
+        tooltip: {
+            valueSuffix: 'kg'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0,
+            enabled: false
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                        color: '#808080',
+                    }
+                },
+            },
+            series: {
+                marker: {
+                    enabled: false
+                }
+            },
+        },
+        series: [{
+            name: '体重',
+            data: [90, 100, 130, 120, 100, 140, 120],
+        }]
+    });
+
 })
